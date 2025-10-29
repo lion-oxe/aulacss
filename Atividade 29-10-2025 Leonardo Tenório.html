@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição no Senai</title>
+    <style>
+    body {
+        display:flex; justify-content:center; align-items:center; height:80%; margin:auto 0; margin-top:20px; margin-bottom:20px; background-color:darkblue;
+    }
+
+    div {
+        background-color:hsl(0, 0%, 100%);
+        width:460px;
+        height:min-content;
+        border:0px;
+        border-radius: 10px;
+        padding:20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        line-height:180%;
+    }
+
+    h1 {
+        text-align:center;
+        font-size:18px;
+        color: rgb(34, 106, 240);
+    }    
+        
+    label {
+    ;
+    }
+
+    input, select, textarea {
+        width:450px;
+        text-align:left;
+        font-size:14px;
+    }
+
+    form {
+        margin: left 10% right 10% top 0 bottom 0;
+    }
+
+    .botao {
+        text-align: center;
+        background-color: blue;
+        color: aliceblue;
+        text-decoration:solid;
+        padding:15px;
+    }
+
+
+    </style>
+</head>
+
+<!-- Leonardo Farias Pessoa Tenório -->
+
+<body>
+
+<div>
+
+<h1>Inscrição em cursos do Senai</h1>
+
+<form>
+
+    <label for="nomecompleto">Nome completo:</label><br>
+    <input type="text" id="nomecompleto" name="nomec" placeholder="Digite seu nome" required><br>
+
+    <label for="nomesocial">Nome social (opcional):</label><br>
+    <input type="text" id="nomesocial" name="nomes" placeholder="Seu nome social"><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="email@exemplo.com" required><br>
+
+    <label for="tel">Telefone:</label><br>
+    <input type="tel" id="tel" name="tel" placeholder="(XX) 9XXXX-XXXX" required><br>
+
+    <label for="curso">Curso desejado:</label><br>
+     <select name="curso" id="curs" placeholder="Selecione" style="overflow:hidden;" required>
+      <option value="ti">Técnico em Informática</option>
+      <option value="te">Técnico em Eletrônica</option>
+      <option value="tm">Técnico em Mecânica</option>
+     </select><br>
+
+    <label for="mensagem">Observações:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite suas observações ..." maxlength="300" required></textarea><br>
+
+    <input type="submit" value="Enviar Inscrição" class="botao">
+
+</form>
+</div>
+
+</body>
+</html>
